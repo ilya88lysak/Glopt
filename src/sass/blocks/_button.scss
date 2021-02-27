@@ -1,0 +1,31 @@
+.btn {  
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: $main-color;
+        transition: .3s all;
+    }
+    
+}
+.contact-btn {
+    min-width: 160px;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.promo-btn {
+    margin-top: 40px;
+    width: 230px;
+    height: 57px;
+    font-size: 15px;
+    font-weight: 700;
+}

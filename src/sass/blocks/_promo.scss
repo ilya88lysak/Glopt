@@ -1,0 +1,44 @@
+.promo {
+    padding: 23px 0 82px 0;
+    background: url('/img/bg/main_bg.jpg')center center/cover no-repeat;
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__logo {
+            width: 96px;
+        }
+        &__menu {
+            padding: 0px 14px 0 23px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            list-style-type: none;
+            height: 100%;
+        }
+        &__item {
+            border-right: 1px dotted #8e9095;
+            padding: 0 13px 0 13px;
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+
+        }
+        &__link {
+            font-size: 15px;
+            font-weight: 400;
+            color: #ffffff;
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+                border-bottom: 1px solid;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
