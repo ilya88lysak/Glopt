@@ -8,11 +8,10 @@
         margin-right: 19px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-end;       
     }
     &-text {
         font-size: 14px;
-        line-height: 24px;
         font-weight: 300;
         line-height: 24px;
         color: #ffffff;
@@ -27,5 +26,11 @@
             text-decoration: none;
             color: #ffffff;
         }
+    }
+    &-btn {
+        min-width: 160px;
+        height: 45px;
+        font-size: 12px;
+        font-weight: 400;
     }
 }
