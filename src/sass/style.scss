@@ -16,12 +16,21 @@
     margin: 0 auto;
 }
 
-/* .divider {
-    width: 60px;
-    height: 3px;
+.divider {
+    width: 148px;
+    height: 1px;
     background-color: $main-color;
-    margin: 25px auto 0 auto;
-} */
+    margin: 20px auto 0 auto;
+}
+
+.circle {
+    width: 102px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
 
 
 @import 'blocks/title';
@@ -29,3 +38,5 @@
 @import 'blocks/promo';
 @import 'blocks/contact';
 @import 'blocks/advantage';
+@import 'blocks/work';
+@import 'blocks/agent';

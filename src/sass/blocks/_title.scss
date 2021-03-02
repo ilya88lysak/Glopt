@@ -1,15 +1,8 @@
 .title {
     &__section {
-        &-title {
-            text-align: center;
-        }
+        text-align: center;
     }
-    &_fz26 {
-        font-size: 26px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #2e2e2e;
-    }
+    
     &_fz14 {
         font-size: 14px;
         font-weight: 300;
@@ -27,10 +20,27 @@
         font-weight: 700;
         color: $main-color;
     }
-    &_fz21-descr {
+    &_fz19 {
+        font-size: 19px;
+        line-height: 27px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &_fz21{
+        padding-top: 17px;
         font-size: 21px;
         line-height: 24px;
         font-weight: 300;
         color: #2e2e2e;
+    }
+    &_fz26 {
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2e2e2e;
+    }
+
+    &_white {
+        color: #fff;
     }
 }

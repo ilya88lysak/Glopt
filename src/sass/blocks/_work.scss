@@ -1,0 +1,25 @@
+.work {
+    padding: 51px 0 57px 0;
+    &__descr {
+        margin: 0 130px;
+    }
+    &__wrapper {
+        padding-top: 37px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        text-align-last: center;
+        &-title {
+            padding-top: 28px;
+        }
+        &-text {
+            padding-top: 7px;
+        }
+    }
+}
