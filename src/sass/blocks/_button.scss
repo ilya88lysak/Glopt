@@ -15,5 +15,13 @@
         color: $main-color;
         transition: .3s all;
     }
+    &-bg-theme-white{
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:hover {
+            border: 1px solid $main-color;
+        }
+    }
     
 }
