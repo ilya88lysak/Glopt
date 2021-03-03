@@ -1,0 +1,51 @@
+.review {
+    padding: 51px 0 65px 0;
+    &__wrapper {
+        position: relative;
+        padding-top: 30px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        padding: 0 50px; 
+    }
+    &__img {
+        height: 114px;
+        width: 114px;
+        img {
+            height: 100%;
+            width: 114px;
+        }
+    }
+    &__customer {
+        padding-top: 20px;
+        text-align-last: center;
+        &-title {
+            color: #3a3a3a;
+            text-align: center;
+        }
+        &-descr {
+            padding-top: 10px;
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        outline: 0;
+        img {
+            width: 14px;
+            height: 46px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+}
