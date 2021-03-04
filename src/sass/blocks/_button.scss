@@ -9,11 +9,14 @@
     border-radius: 30px;
     border: none;
     text-transform: uppercase;
+    &:focus {
+        outline: none;
+    }
     &:hover {
         background-color: transparent;
         border: 1px solid #fff;
         color: $main-color;
-        transition: .3s all;
+        transition: .5s all;
     }
     &-bg-theme-white{
         font-size: 12px;
