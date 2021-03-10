@@ -2,11 +2,11 @@
     padding: 46px 0 51px 0;
     background-color: #f3f3f3;
     &__wrapper {
-        padding-top: 30px;
+        padding-top: 16px;
         display: grid;
-        grid-template-columns: repeat(2, 515px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        column-gap: 71px;
+        column-gap: 34px;
         row-gap: 35px;
     }
     &__item {
@@ -15,16 +15,16 @@
         grid-template-rows: auto;
         column-gap: 14px;
         align-items: flex-start;
+        padding-right: 15px;
 
         &-icon {
             padding-top: 0;
         }
         &-text {
-            padding-top: 16px;
+            padding-top: 7px;
         }
         &-title {
-            line-height: 0;
-            padding-top: 7px;
+            line-height: 16px;
         }
     }
 

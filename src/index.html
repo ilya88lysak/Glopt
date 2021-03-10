@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <div class="promo-header">
                 <a href="#" class="promo-header__logo">
@@ -17,16 +17,21 @@
                 </a>
 
                 <ul class="promo-header__menu">
-                    <li class="promo-header__item"><a href="#" class="promo-header__link">Преимущества</a></li>
-                    <li class="promo-header__item"><a href="#" class="promo-header__link"> Наша работа </a></li>
-                    <li class="promo-header__item"><a href="#" class="promo-header__link">Цены</a></li>
-                    <li class="promo-header__item"><a href="#" class="promo-header__link">Схема работы</a></li>
-                    <li class="promo-header__item"><a href="#" class="promo-header__link">Отзывы</a></li>
-                    <li class="promo-header__item"><a href="#" class="promo-header__link">Контакты</a></li>
+                    <li class="promo-header__item"><a href="#advantage" class="promo-header__link">Преимущества</a></li>
+                    <li class="promo-header__item"><a href="#work" class="promo-header__link">Наша работа </a></li>
+                    <li class="promo-header__item"><a href="#price" class="promo-header__link">Цены</a></li>
+                    <li class="promo-header__item"><a href="#scheme-work" class="promo-header__link">Схема работы</a></li>
+                    <li class="promo-header__item"><a href="#review" class="promo-header__link">Отзывы</a></li>
+                    <li class="promo-header__item"><a href="#feedback" class="promo-header__link">Контакты</a></li>
                 </ul>
+                <div class="promo-header__menu_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
-                <div class="contact">
-                    <div class="contact__wrapper">
+                <div class="contact promo__contact">
+                    <div class="contact__wrapper promo__contact__wrapper">
                         <div class="contact-text">Есть вопросы?</div>
                         <a href="tel:79264230100" class="contact-phone">+7 (926) 423 01 00</a>
                     </div>
@@ -78,11 +83,11 @@
                     
             </div>
         </div>   
-    </div>
+    </section>
 
-    <div class="advantage">
+    <section id="advantage" class="advantage">
         <div class="container">
-            <div class="title title_fz26 title__section">Преимущества работы с GlobalOpt</div>
+            <h2 class="title title_fz26 title__section">Преимущества работы с GlobalOpt</h2>
             <div class="advantage__wrapper">
                 <div class="advantage__item">
                     <div class="advantage__item-icon">
@@ -158,11 +163,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="work">
+    <section id="work" class="work">
         <div class="container">
-            <div class="title title_fz26 title__section">Наша работа - больше чем просто доставка</div>
+            <h2 class="title title_fz26 title__section">Наша работа - больше чем просто доставка</h2>
             <div class="divider"></div>
             <div class="title title_fz21 title__section work__descr">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза
                 и ваших требований по срокам и бюджету.</div>
@@ -185,21 +190,21 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="agent">
+    <section class="agent">
         <div class="container">
             <div class="circle agent__circle">
                 <img class="agent__circle-icon" src="icons/agent.png" alt="agent">
             </div>
-            <div class="title title_fz26 title_white title__section agent__title">Агент в Китае</div>
+            <h2 class="title title_fz26 title_white title__section agent__title">Агент в Китае</h2>
             <div class="title title_fz19 title_white title__section agent__descr">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
-    </div>
+    </section>
 
-    <div class="price">
+    <section id="price" class="price">
         <div class="container">
-            <div class="title title_fz26 title__section">Цены на любой вариант доставки</div>
+            <h2 class="title title_fz26 title__section">Цены на любой вариант доставки</h2>
             <div class="divider"></div>
             <div class="title title_fz21 title__section work__descr">Перевозки грузов на дальние расстояния без каких-либо ограничений. Любой груз доставим вовремя.</div>
             <div class="price__content">
@@ -256,11 +261,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
-            <div class="title title__section consultation__title">Заказать бесплатную консультацию</div>
+            <h2 class="title title__section consultation__title">Заказать бесплатную консультацию</h2>
             <form id="consultation-form" class="feed-form consultation-form" action="#">
                 <div class="consultation__label">
                     <div class="circle consultation__label-circle">
@@ -268,30 +273,30 @@
                     </div>
                 </div>
                 <div class="consultation__input">
-                    <input required placeholder="Ваше имя..." name="name" type="text">
-                    <input required placeholder="Ваш номер телефона..." name="phone" class="valid" aria-invalid="false" type="tel">
-                    <input required placeholder="Ваш e-mail..." name="email" type="text">
+                    <input class="valid consultation__input-item" required placeholder="Ваше имя..." name="name" type="text">
+                    <input required placeholder="Ваш номер телефона..." name="phone" class="valid consultation__input-item" aria-invalid="false" type="tel">
+                    <input required placeholder="Ваш e-mail..." name="email" class="valid consultation__input-item" type="text">
                 </div>
                 <div class="consultation__btn">
                     <button class="btn consultation__btn-button btn-bg-theme-white">Отправить заявку</button>
                 </div>
             </form>
         </div>
-    </div>
+    </section>
 
-    <div class="managers">
+    <section class="managers">
         <div class="container">
             <div class="circle managers__circle">
                 <img class="managers__circle-icon" src="icons/managers.png" alt="agent">
             </div>
-            <div class="title title_fz26 title_white title__section managers__title">Менеджеры компании</div>
+            <h2 class="title title_fz26 title_white title__section managers__title">Менеджеры компании</h2>
             <div class="title title_fz19 title_white title__section managers__descr">Подберут для Вас оптимальную схему грузоперевозки.Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.</div>
         </div>
-    </div>
+    </section>
 
-    <div class="scheme-work">
+    <section id="scheme-work" class="scheme-work">
         <div class="container">
-            <div class="title title_fz26 title__section">Схема работы с нами</div>
+            <h2 class="title title_fz26 title__section">Схема работы с нами</h2>
             <div class="scheme-work__wrapper">
                 <div class="scheme-work__item">
                     <div class="scheme-work__item-icon">
@@ -358,50 +363,56 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="review">
+    <section id="review" class="review">
         <div class="container">
-            <div class="title title_fz26 title__section">отзывы наших клиентов</div>
+            <h2 class="title title_fz26 title__section">отзывы наших клиентов</h2>
             <div class="divider"></div>
             <div class="title title_fz21 title__section review__descr">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
             <div class="review__wrapper">
-                <div class="review__item">
-                    <div class="review__img">
-                        <img src="img/review/photo_1.jpg" alt="photo_1">
-                    </div>
-                    <div class="review__customer">
-                        <div class="title title_fz18 review__customer-title">Анисимова Ольга</div>
-                        <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
-                    </div>
-                </div>
-                <div class="review__item">
-                    <div class="review__img">
-                        <img src="img/review/photo_2.jpg" alt="photo_2">
-                    </div>
-                    <div class="review__customer">
-                        <div class="title title_fz18 review__customer-title">Дмитрий Иванов</div>
-                        <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                <div>
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/review/photo_1.jpg" alt="photo_1">
+                        </div>
+                        <div class="review__customer">
+                            <div class="title title_fz18 review__customer-title">Анисимова Ольга</div>
+                            <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                        </div>
                     </div>
                 </div>
-                <div class="review__item">
-                    <div class="review__img">
-                        <img src="img/review/photo_3.jpg" alt="photo_3">
+                <div>
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/review/photo_2.jpg" alt="photo_2">
+                        </div>
+                        <div class="review__customer">
+                            <div class="title title_fz18 review__customer-title">Дмитрий Иванов</div>
+                            <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                        </div>
                     </div>
-                    <div class="review__customer">
-                        <div class="title title_fz18 review__customer-title">Сергей Валиев</div>
-                        <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                </div>
+                <div>
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/review/photo_3.jpg" alt="photo_3">
+                        </div>
+                        <div class="review__customer">
+                            <div class="title title_fz18 review__customer-title">Сергей Валиев</div>
+                            <div class="title title_fz14 review__customer-descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="feedback-form">
+    <!-- <section id="feedback" class="feedback-form">
         <div class="container">
             <div class="feedback-form__wrapper">
                 <div class="feedback-form__header">
-                    <div class="title title_white title__section feedback-form__title">Остались вопросы?</div>
+                    <h2 class="title title_white title__section feedback-form__title">Остались вопросы?</h2>
                     <div class="title title_white title__section feedback-form__descr">Напишите нам!</div>
                 </div>
                 <form id="feedback-form" class="feed-form feedback-form__feed-form" action="#">
@@ -417,9 +428,9 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section> -->
     
-    <div class="footer">
+    <!-- <section class="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1122.7969417461097!2d37.62690279986772!3d55.74818496543308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUwMzU!5e0!3m2!1sru!2sua!4v1614849822062!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="container">
             <div class="footer__content">
@@ -431,7 +442,7 @@
                 </div>
                 <div class="contact footer__contact">
                     <div class="contact__wrapper">
-                        <div class="contact-text">Есть вопросы?</div>
+                        <h2 class="contact-text">Есть вопросы?</h2>
                         <a href="tel:79264230100" class="contact-phone">+7 (926) 423 01 00</a>
                     </div>
                     <button class="btn contact-btn">Перезвоните мне</button>
@@ -449,7 +460,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/slick.min.js"></script>

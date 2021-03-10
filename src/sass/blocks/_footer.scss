@@ -6,7 +6,7 @@
         height: 500px;
     }
     &__content {
-        padding: 24px 0 28px 0;
+        padding: 24px 0 16px 0;
         display: flex;
         justify-content: space-between;
         div {
@@ -32,6 +32,7 @@
         background-color: #677177;
     }
     &__sub {
+        padding: 14px 0 21px 0;
         display: flex;
         justify-content: space-between;
         &_policy-link {

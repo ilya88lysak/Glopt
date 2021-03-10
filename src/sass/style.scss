@@ -18,6 +18,10 @@
     margin: 0 auto;
 }
 
+.hamburger {
+	display: none;
+}
+
 .divider {
     width: 148px;
     height: 1px;
@@ -50,5 +54,6 @@
 @import 'blocks/rewiev';
 @import 'blocks/feedback-form';
 @import 'blocks/footer';
+@import 'blocks/media'
 
 
