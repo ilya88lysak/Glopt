@@ -41,7 +41,6 @@ $(document).ready(function(){
         });
     });
     
-    // собираем все якоря; устанавливаем время анимации и количество кадров
     const anchors = document.querySelectorAll('a[href*="#"]')
 
     for (let anchor of anchors) {

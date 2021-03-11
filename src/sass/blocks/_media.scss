@@ -25,9 +25,11 @@
             }
             &__menu {
                 padding: 0 14px 0 14px;
+                justify-content: space-evenly;
             }
             &__item {
                 padding: 0 6px 0 6px;
+                border-right: none;
             }
         }
         &-subheader {
@@ -73,7 +75,8 @@
 
 @media (max-width: 992px) {
     .container {
-        width: 745px;
+        width: 100%;
+        padding: 0 15px;
     }
     .promo {
         padding-top: 0;
@@ -129,6 +132,21 @@
             left: 0;
         }
     }
+    .feedback-form {
+        &__wrapper {
+            width: 50vw;
+        }
+        &__feed-form {
+            padding: 18px 25px 25px;
+        }
+        &__input {
+            width: 100%;
+            input {
+                width: inherit;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -181,15 +199,19 @@
                 }
                 &_hamburger {
                     width: 26px;
+                    position: fixed;
                     height: 12px;
+                    top: 10px;
+                    right: 20px;
                     grid-column: 2 / 3;
                     align-self: center;
                     margin-left: auto;
+                    z-index: 2;
                     span {
                         display: block;
                         height: 2px;
                         width: 100%;
-                        background-color: #fff; 
+                        background-color: $main-color; 
                         margin-bottom: 2px;
                         transition: 0.5s all;
                     }
@@ -290,6 +312,21 @@
         //     margin: 0 45px;
         // }
     }
+    .feedback-form {
+        &__wrapper {
+            width: 75vw;
+        }
+    }
+    .footer {
+        &__content {
+            padding: 10px 0 10px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            padding-left: 10px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -377,8 +414,28 @@
         }
     }
     .review {
+        padding: 30px 0 30px 0;
         &__item {
             padding: 0;
+        }
+    }
+    .feedback-form {
+        padding: 30px 0 30px 0;
+        &__wrapper {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__content {
+            padding-bottom: 0;
+            &_header {
+                display: none;
+            }
+        }
+        &__sub {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            column-gap: 10px;
         }
     }
 }
